@@ -1,0 +1,11 @@
+<resources>
+        <string name="app_name">myHistoryApp</string>
+        <string name="results">Results</string>
+        <string name="submit">Submit</string>
+        <string name="clear">Clear</string>
+        <string name="description">find historical figures around your age</string>
+        <string name="age">AGE :</string>
+        <string name="hint">please enter age between 20 and 100</string>
+        <string name="heading">Famous Historical Figures</string>
+        <string name="error">"Invalid input:please enter age to see results"</string>
+</resources>

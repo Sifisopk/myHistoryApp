@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F1F1F1"
+    tools:context=".MainActivity">
+
+    <!-- TextView for the title -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:background="#2E2D2D"
+        android:fontFamily="casual"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:shadowColor="#000000"
+        android:text="@string/heading"
+        android:textColor="#FBF9F9"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- EditText for age input -->
+    <EditText
+        android:id="@+id/ageNum"
+        android:layout_width="316dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:backgroundTint="#000000"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:hint="@string/hint"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColor="#000000"
+        android:textColorHint="#272525"
+        android:textStyle="normal|bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <!-- Button to submit -->
+    <Button
+        android:id="@+id/subBtn"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="176dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#474646"
+        android:fontFamily="casual"
+        android:text="@string/submit"
+        android:textSize="20sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintEnd_toStartOf="@+id/clearBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ageNum" />
+
+
+    <!-- textview without the scroll view-->
+    <!--<TextView
+       android:id="@+id/result"
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_marginTop="15dp"
+       android:fontFamily="casual"
+       android:foregroundGravity="center"
+       android:gravity="center"
+       android:maxLines="8"
+       android:text="@string/results"
+       android:textSize="20sp"
+       android:textStyle="bold"
+       android:windowSoftInputMode="adjustPan"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="1.0"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/clearBtn"
+       app:layout_constraintVertical_bias="1.0" /> -->
+
+    <!-- scrollview that will allow vertical scrolling when the textview exceeds screen size-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clearBtn"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:paddingTop="50dp"
+            android:scrollbars="vertical"
+            android:text="@string/results"
+            android:textAlignment="center"
+            android:textColor="#272525"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </ScrollView>
+
+    <!-- Button to clear input -->
+    <Button
+        android:id="@+id/clearBtn"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="176dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#474646"
+        android:fontFamily="casual"
+        android:shadowColor="#FFFFFF"
+        android:text="@string/clear"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/subBtn"
+        app:layout_constraintTop_toBottomOf="@+id/ageNum" />
+
+    <!-- TextView of that describes what the app does -->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:fontFamily="monospace"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="@string/description"
+        android:textColor="#272525"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ageNum" />
+
+    <!-- TextView for the "Age" label -->
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="5dp"
+        android:fontFamily="casual"
+        android:text="@string/age"
+        android:textColor="#272525"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/ageNum"
+        app:layout_constraintHorizontal_bias="0.833"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

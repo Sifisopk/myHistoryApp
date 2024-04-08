@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="textView" type="id" />
+    <item name="subBtn" type="id" />
+    <item name="clearBtn" type="id" />
+    <item name="ageNum" type="id" />
+    <item name="result" type="id" />
+    <item name="textView2" type="id" />
+    <item name="textView3" type="id" />
+</resources>
