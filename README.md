@@ -39,6 +39,7 @@ throughout the process of app building I used GitHub to make the process, I used
 
 
 . testing and automated testing
+![Screenshot (90)](https://github.com/Sifisopk/myHistoryApp/assets/162301784/d9704cfc-5f6f-4c3f-a525-fdda64a348ca)
 
 I conducted manual testing as I was making changes to my code to make sure the application will work the way it is intended to. The testing was to make sure that the application works seamlessly and offers enjoyable educational experience for students. testing was utilized so that the application will run without any problems so that the user gets a finished product that runs without any errors.
 The version control from GitHub Actions has been an important tool for making the development processes easier. By making the workflows and triggers, I used automated tasks on my code and deployment, testing and reducing the work that was going to be used manually work and making development much more faster and it saved me a lot of time.it made deploying updates to my code simple and easy, GitHub Actions has helped me to work on my code and update it whenever I wanted to and making while it reliable and improving workflow.
