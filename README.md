@@ -33,7 +33,8 @@ I researched the information of famous historical figures that I was going to us
 Using android studio to develop the application was easy as the android studio platform was user friendly and developing and the platform also offers GitHub and other user integrated development systems to make it easier for developers to use the platform from beginners to professionals. 
 
 . GitHub and GitHub Actions
-![Screenshot (77)](https://github.com/Sifisopk/history-app/assets/162301784/892f9df8-2619-4126-9bfb-bf94be4885a6)
+![Screenshot (91)](https://github.com/Sifisopk/myHistoryApp/assets/162301784/28fb0246-43bb-49be-8e91-f891cbb08b4e)
+
 
 throughout the process of app building I used GitHub to make the process, I used GitHub to version control and to ensure that my code is reliable and that it had no errors. Using GitHub I created a repository where all my updates of the code were committed and updated, tracked.it allowed me to create separate files to test out new features or fix bugs without changing the code and risking everything falling apart. Then, once I was confident everything was good to go, I could merge my changes back into the main code.
 
