@@ -66,27 +66,6 @@
         app:layout_constraintTop_toBottomOf="@+id/ageNum" />
 
 
-    <!-- textview without the scroll view-->
-    <!--<TextView
-       android:id="@+id/result"
-       android:layout_width="match_parent"
-       android:layout_height="0dp"
-       android:layout_marginTop="15dp"
-       android:fontFamily="casual"
-       android:foregroundGravity="center"
-       android:gravity="center"
-       android:maxLines="8"
-       android:text="@string/results"
-       android:textSize="20sp"
-       android:textStyle="bold"
-       android:windowSoftInputMode="adjustPan"
-       app:layout_constraintBottom_toBottomOf="parent"
-       app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintHorizontal_bias="1.0"
-       app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toBottomOf="@+id/clearBtn"
-       app:layout_constraintVertical_bias="1.0" /> -->
-
     <!-- scrollview that will allow vertical scrolling when the textview exceeds screen size-->
     <ScrollView
         android:layout_width="match_parent"
@@ -102,6 +81,7 @@
         app:layout_constraintTop_toBottomOf="@+id/clearBtn"
         app:layout_constraintVertical_bias="0.0">
 
+        <!-- Textview to display the results-->
         <TextView
             android:id="@+id/result"
             android:layout_width="match_parent"
