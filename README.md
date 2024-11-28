@@ -10,9 +10,9 @@ ST10435609
 					DOCUMENTATION
 
 . purpose of the app 
-
-![Screenshot (79)](https://github.com/user-attachments/assets/be406fd8-a695-4896-83df-53ad69f6b6e5)
 ![Screenshot (78)](https://github.com/user-attachments/assets/b725f165-d384-4651-b6ce-505709eb7120)
+![Screenshot (79)](https://github.com/user-attachments/assets/be406fd8-a695-4896-83df-53ad69f6b6e5)
+
 
 
 I designed an application that will take a user’s input and compare it to famous people in history, the application is designed to be fun, interactive, and easy to use. The purpose of this application is to take the users age as input and compare them to different people in history when they passed away. The application is designed make learning fun for students and everyone else who is interested in learning about history, the application will make students or anyone who uses it to see what famous people from history were doing around their ages what they accomplished in life, the paths they took to get to that point in their lives, what inspired them and what they did to impact the lives of people and the environment around them.
